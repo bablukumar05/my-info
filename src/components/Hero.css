@@ -1,0 +1,137 @@
+/* Hero Section */
+
+.hero-section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    /* Full screen */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 2rem;
+    background: #0f172a;
+    /* Dark background */
+    overflow: hidden;
+    z-index: 1;
+}
+
+
+/* Glass container */
+
+.hero-container.glass {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* Responsive */
+    width: 100%;
+    max-width: 1200px;
+    gap: 2rem;
+    padding: 2rem 3rem;
+    border-radius: 1rem;
+    background: rgba(15, 23, 42, 0.6);
+    backdrop-filter: blur(16px) saturate(180%);
+    z-index: 2;
+    box-sizing: border-box;
+}
+
+
+/* Left Text */
+
+
+/* .hero-text {
+    flex: 1;
+    min-width: 300px;
+    color: #ffffff;
+    Make text visible */
+
+
+/* } */
+
+
+/* .hero-text h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    color: #ffffff;
+} */
+
+
+/* .hero-text p { */
+
+
+/* font-size: 1.1rem; */
+
+
+/* color: #cbd5e1; */
+
+
+/* Light gray text */
+
+
+/* } */
+
+
+/* Buttons */
+
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.hero-button {
+    padding: 0.75rem 1.5rem;
+    border-radius: 9999px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.hero-socials {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    font-size: 1.6rem;
+    color: #a5b4fc;
+}
+
+
+/* Right Profile Image */
+
+.hero-profile {
+    flex: 0.8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 260px;
+}
+
+.hero-profile img {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    border: 5px solid #6366f1;
+    object-fit: cover;
+    background: #0f172a;
+    opacity: 1 !important;
+    /* Ensure always visible */
+}
+
+
+/* Responsive */
+
+@media (max-width: 768px) {
+    .hero-container.glass {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .hero-text h1 {
+        font-size: 2.2rem;
+    }
+    .hero-profile img {
+        width: 200px;
+        height: 200px;
+    }
+}
